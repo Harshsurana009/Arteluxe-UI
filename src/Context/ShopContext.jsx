@@ -22,8 +22,7 @@ const ShopContextProvider = (props) => {
           Accept: "application/json",
           "auth-token": `${localStorage.getItem("auth-token")}`,
           "Content-Type": "application/json",
-        },
-        body: "",
+        }
       })
         .then((res) => res.json())
         .then((data) => {
@@ -45,13 +44,13 @@ const ShopContextProvider = (props) => {
         body: JSON.stringify({ product_id: itemId }),
       })
         .then((res) => res.json())
-        .then((data) => console.log(data));
+        .then(() =>  window.location.replace("/cart"));
     }
   };
 
   const removeFromCart = (itemId) => {
     if (localStorage.getItem("auth-token")) {
-      fetch("https://30ec-117-211-249-155.ngrok-free.app/website/api/remove_to_cart", {
+      fetch("https://30ec-117-211-249-155.ngrok-free.app/website/api/remove_from_cart", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -61,7 +60,7 @@ const ShopContextProvider = (props) => {
         body: JSON.stringify({ product_id: itemId }),
       })
         .then((res) => res.json())
-        .then((data) => console.log(data));
+        .then((data) => window.location.reload());
     }
   };
 

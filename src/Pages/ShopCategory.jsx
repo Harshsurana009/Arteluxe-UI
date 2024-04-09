@@ -20,7 +20,7 @@ const ShopCategory = (props) => {
       <div className="shopcategory-products">
         {console.log(all_product)}
         {all_product.map((item, i) => {
-          if (props.category !== '[]') {
+          if (props.category === item.category[0]) {
             return (
               <Item
                 key={i}

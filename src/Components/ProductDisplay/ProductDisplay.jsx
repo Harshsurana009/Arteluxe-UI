@@ -17,7 +17,11 @@ const ProductDisplay = (props) => {
           <img src={product.image_url} alt="" />
         </div>
         <div className="productdisplay-img">
-          <img className="productdisplay-main-img" src={product.image_url} alt="" />
+          <img
+            className="productdisplay-main-img"
+            src={product.image_url}
+            alt=""
+          />
         </div>
       </div>
       <div className="productdisplay-right">
@@ -52,12 +56,22 @@ const ProductDisplay = (props) => {
             <div className="colour navy"></div>
           </div>
         </div>
-        <button onClick={()=>{addToCart(product.id)}}>Add To Cart</button>
+        <button
+          onClick={() => {
+            addToCart(product.id);
+          }}
+        >
+          Add To Cart
+        </button>
         <p className="productdisplay-right-category">
-           <strong>Category :</strong> {product.category?.map((c)=>(<span>{c}</span>))}
+          <strong>Category :</strong>{" "}
+          {product.category?.map((c) => (
+            <span>{c}</span>
+          ))}
         </p>
         <p className="productdisplay-right-category">
-          <strong>Tags :</strong> <span>New</span> <span>Latest</span> <span>Refreshing</span> 
+          <strong>Tags :</strong> <span>New</span> <span>Latest</span>{" "}
+          <span>Refreshing</span>
         </p>
       </div>
     </div>
