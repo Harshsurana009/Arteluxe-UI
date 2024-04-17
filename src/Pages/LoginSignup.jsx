@@ -18,7 +18,7 @@ const LoginSignup = () => {
     let data = new FormData();
     data.append("data", JSON.stringify(formData));
     let responseData;
-    await fetch("https://30ec-117-211-249-155.ngrok-free.app/website/api/sign_in", {
+    await fetch("https://arteluxe.onrender.com/website/api/sign_in", {
       method: "POST",
       headers: {
         Accept: "application/form-data",
@@ -39,7 +39,7 @@ const LoginSignup = () => {
     let data = new FormData();
     data.append("data", JSON.stringify(formData));
     let responseData;
-    await fetch("https://30ec-117-211-249-155.ngrok-free.app/website/api/sign_up", {
+    await fetch("https://arteluxe.onrender.com/website/api/sign_up", {
       method: "POST",
       headers: {
         // Accept: "application/form-data",

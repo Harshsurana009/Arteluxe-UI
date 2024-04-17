@@ -12,6 +12,7 @@ import magnet_banner from './Components/Assets/p2.png';
 import gift_item_banner from './Components/Assets/p4.png';
 import chocolate_banner from './Components/Assets/p3.png';
 import personalised_banner from './Components/Assets/p1.png';
+import Order from './Pages/Order';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
               </Route>
               <Route path='/cart' element={<Cart/>}/>
               <Route path='/login' element={<LoginSignup/>}/>
+              <Route path="/order/:order_ref" element={<Order/>} />
             </Routes>
             <Footer/>
           </BrowserRouter>
