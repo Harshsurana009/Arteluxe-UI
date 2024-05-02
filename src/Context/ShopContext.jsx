@@ -49,6 +49,9 @@ const ShopContextProvider = (props) => {
         .then((res) => res.json())
         .then(() => window.location.replace("/cart"));
     }
+    else{
+      alert("Please login to add items to cart")
+    }
   };
 
   const removeFromCart = (itemId) => {
