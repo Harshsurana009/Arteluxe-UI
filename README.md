@@ -18,6 +18,10 @@ It designed with user authentication functionality, admin panel for efficient pr
 #### Cart & Payment Page
 ![Arteluxe Desktop Demo](https://res.cloudinary.com/dyl6ynnnz/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/lkqpxfu6isv40oleenrptx4cz1iz)
 
+#### Arteluxe Admin
+![Arteluxe Desktop Demo](https://res.cloudinary.com/dyl6ynnnz/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/cm11swjvdgpqetcyk9xxcisvb0nv)
+
+
 ## Contact
 
 If you want to contact me you can reach me at [Linkedin](https://www.linkedin.com/in/harshsurana009).
